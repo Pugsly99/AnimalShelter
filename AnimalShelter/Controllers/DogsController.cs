@@ -32,7 +32,7 @@ namespace AnimalShelter.Controllers
 
 
     [HttpGet]
-    public ActionResult<IEnumerable<Dog>> Get(string name, int age, string gender, string species)
+    public ActionResult<IEnumerable<Dog>> Get(string name, string age, string gender, string species)
     {
       var query = _db.Dogs.AsQueryable();
 
@@ -41,7 +41,7 @@ namespace AnimalShelter.Controllers
         query = query.Where(entry => entry.Name == name);
       }
 
-      if (age != 0)
+      if (age != null)
       {
         query = query.Where(entry => entry.Age == age);
       }
