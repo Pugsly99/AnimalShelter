@@ -1,0 +1,14 @@
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\bin\Debug\netcoreapp2.2\AnimalShelter.deps.json
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\bin\Debug\netcoreapp2.2\AnimalShelter.runtimeconfig.json
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\bin\Debug\netcoreapp2.2\AnimalShelter.runtimeconfig.dev.json
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\bin\Debug\netcoreapp2.2\AnimalShelter.dll
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\bin\Debug\netcoreapp2.2\AnimalShelter.pdb
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\obj\Debug\netcoreapp2.2\AnimalShelter.csprojAssemblyReference.cache
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\obj\Debug\netcoreapp2.2\AnimalShelter.csproj.CoreCompileInputs.cache
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\obj\Debug\netcoreapp2.2\AnimalShelter.RazorAssemblyInfo.cache
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\obj\Debug\netcoreapp2.2\AnimalShelter.RazorAssemblyInfo.cs
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\obj\Debug\netcoreapp2.2\AnimalShelter.AssemblyInfoInputs.cache
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\obj\Debug\netcoreapp2.2\AnimalShelter.AssemblyInfo.cs
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\obj\Debug\netcoreapp2.2\AnimalShelter.RazorTargetAssemblyInfo.cache
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\obj\Debug\netcoreapp2.2\AnimalShelter.dll
+C:\Users\Ryland\Desktop\AnimalShelter.Solution\AnimalShelter\obj\Debug\netcoreapp2.2\AnimalShelter.pdb
