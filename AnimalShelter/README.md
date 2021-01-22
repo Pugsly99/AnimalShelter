@@ -1,17 +1,9 @@
-# **MtSafe.Solution**
-Project Initiated: 2021-01-19<br>
-Updated: 2021-01-19
+# **AnimalShelter.Solution**
+Project Initiated: 2021-01-22<br>
+Updated: 2021-01-22
 
-## **MtSafe Description**
-
-This project was created as a crowd source weather saftey application to allow for users to report weather conditions in specific areas.
-
-As a user I, want to get and post reports about user experienced conditions.  
-As a user I, want to know where this specific report is referenced to. 
-As a user I, want to limit PUT and DELETE actions to the Report Creator. 
-As a user I, want reports to be queryable by date, location, inputting user. 
-
-
+## **Animal Shelter Description**
+This project was created to track all the cats and dogs in the shelter.
 
 ## **Required for Use**
 * C# and .Net Core installed on your local machine. (Developed on .Net Core v2.2.4)
@@ -109,25 +101,25 @@ Then open MySQL Workbench and select the Local instance 3306 server. You will ne
 
   #### Cloning
 
-  1) Navigate to the [Mt.Safe API Repository](https://github.com/MaxBrockbank/MtSafe.Solution.git).
+  1) Navigate to the [Animal Shelter API Repository](https://github.com/Pugsly99/AnimalShelter.git).
   2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   3) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
-  4) Clone the repository to your desktop: `$ git clone https://github.com/MaxBrockbank/MtSafe.Solution.git`
-  5) Run the command `cd MtSafe.Solution` to enter into the project directory.
+  4) Clone the repository to your desktop: `$ git clone https://github.com/Pugsly99/AnimalShelter.git`
+  5) Run the command `cd AnimalShelter.Solution` to enter into the project directory.
   6) View or Edit:
       * Code Editor - Run the command `atom .` or `code .` to open the project in Atom or VisualStudio Code respectively for review and editing.
       * Text Editor - Open by double clicking on any of the files to open in a text editor.
 
   #### Download
 
-  1) Navigate to the [Mt.Safe API Repository](https://github.com/MaxBrockbank/MtSafe.Solution.git).
+  1) Navigate to the [Animal Shelter API Repository](https://github.com/Pugsly99/AnimalShelter.git).
   2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   3) Click 'Download ZIP' and unextract.
   4) Open by double clicking on any of the files to open in a text editor.
 
   #### AppSettings
 
-  1) Create a new file in the CoffeeTrackerAPI.Solution/CoffeeTrackerAPI directory named `appsettings.json`
+  1) Create a new file in the AnimalShelter.Solution/AnimalShelter directory named `appsettings.json`
   2) Add in the following code snippet to the new appsettings.json file:
   
   ```
@@ -139,19 +131,19 @@ Then open MySQL Workbench and select the Local instance 3306 server. You will ne
     },
     "AllowedHosts": "*",
     "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=mt_safe;uid=root;pwd=YourPassword;"
+        "DefaultConnection": "Server=localhost;Port=3306;database=Ryland_Adams_animal_shelter;uid=root;pwd=YourPassword;"
     }
 }
   ```
   3) Change the server, port, and user id as necessary. Replace 'YourPassword' with relevant MySQL password (set at installation of MySQL).
 
   #### Database
-  1) Navigate to MtSafe.Solution/MtSafe directory using the MacOS Terminal or Windows Powershell (e.g. `cd Desktop/MtSafeAPI.Solution/MtSafe`).
+  1) Navigate to AnimalShelter.Solution/AnimalShelter directory using the MacOS Terminal or Windows Powershell (e.g. `cd Desktop/AnimalShelter.Solution/AnimalShelter`).
   2) Run the command `dotnet ef database update` to generate the database through Entity Framework Core.
   3) (Optional) To update the database with any changes to the code, run the command `dotnet ef migrations add <MigrationsName>` which will use Entity Framework Core's code-first principle to generate a database update. After, run the previous command `dotnet ef database update` to update the database.
 
   #### Launch the API
-  1) Navigate to MtSafe.Solution/MtSafe directory using the MacOS Terminal or Windows Powershell (e.g. `cd Desktop/MtSafe.Solution/MtSafe`).
+  1) Navigate to AnimalShelter.Solution/AnimalShelter directory using the MacOS Terminal or Windows Powershell (e.g. `cd Desktop/AnimalShelter.Solution/AnimalShelter`).
   2) Run the command `dotnet run` to have access to the API in Postman or browser.
   3) _SIDENOTE_: If changes are made to the Controller file you will need to run the `dotnet build` command before you can run `dotnet run` to see your changes active.
 
@@ -165,7 +157,7 @@ To explore the CoffeeTracker API with NSwag, launch the project using `dotnet ru
 
 #### Example Query
 ```
-http://localhost:5000/api/2.0/reports?username=Albert
+http://localhost:5000/api/Dogs/?name=Apollo
 ```
 
 ..........................................................................................
@@ -174,7 +166,7 @@ http://localhost:5000/api/2.0/reports?username=Albert
 Base URL: `https://localhost:5000`
 
 ### Reports
-Access user created snow reports.
+Access the cats and dogs of the shelter.
 
 #### HTTP Request
 ```
@@ -210,9 +202,7 @@ GET /api/dogs/{name, age, gender, species}
 | gender | string | none | false | Returns dogs that match with a specific gender. |
 | species | string | none | false |  Returns dogs that match with a specific gender. |
 
-
 ..........................................................................................
-
 
 ## **Usage / Examples**
 
