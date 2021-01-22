@@ -66,5 +66,13 @@ namespace AnimalShelter.Controllers
         _db.Entry(cat).State = EntityState.Modified;
         _db.SaveChanges();
     }
+
+    [HttpDelete("{id}")]
+    public void Delete(int id)
+    {
+        var CatToDelete = _db.Cats.FirstOrDefault(entry => entry.CatId  == id);
+        _db.Cats.Remove(CatToDelete);
+        _db.SaveChanges();
+    }
   }
 }
