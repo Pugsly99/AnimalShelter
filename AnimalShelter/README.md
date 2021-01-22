@@ -235,7 +235,6 @@ Ryland Adams - rylandadams@yahoo.com
 
 ## **License**
 
-
 GPLv3
 
 Copyright © 2020 Ryland Adams

@@ -23,12 +23,12 @@ namespace AnimalShelter.Controllers
         return _db.Dogs.FirstOrDefault(entry => entry.DogId == id);
     }
 
-    [HttpGet("{id}")]
-    public ActionResult<Dog> Random()
-    {
-        var Found = select top 1 * from _db.Dogs order by newid();
-        return Found.ToList()
-    }
+    // [HttpGet("{id}")]
+    // public ActionResult<Dog> Random()
+    // {
+    //     var Found = select top 1 * from _db.Dogs order by newid();
+    //     return Found.ToList()
+    // }
 
 
     [HttpGet]
