@@ -17,6 +17,7 @@ namespace AnimalShelter.Controllers
       _db = db;
     }
 
+    //[EnableCors]
     [HttpGet("{id}")]
     public ActionResult<Cat> Get(int id)
     {

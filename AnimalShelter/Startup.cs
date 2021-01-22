@@ -18,11 +18,20 @@ namespace AnimalShelter
         {
             Configuration = configuration;
         }
-
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                builder.WithOrigins("http://example.com",
+                                    "http://www.contoso.com");
+                });
+            });
             services.AddDbContext<AnimalShelterContext>(opt =>
                 opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -52,6 +61,7 @@ namespace AnimalShelter
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
 
+            app.UseCors();
             // app.UseHttpsRedirection();
             app.UseMvc();
         }
