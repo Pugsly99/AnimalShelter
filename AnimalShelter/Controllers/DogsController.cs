@@ -16,20 +16,40 @@ namespace AnimalShelter.Controllers
       _db = db;
     }
 
-    
-    [HttpGet]
-    public ActionResult<IEnumerable<Dog>> Get()
-    {
-      return _db.Dogs.ToList();
-    }
-
     [HttpGet("{id}")]
     public ActionResult<Dog> Get(int id)
     {
         return _db.Dogs.FirstOrDefault(entry => entry.DogId == id);
     }
 
-    // POST api/dogs
+    [HttpGet]
+    public ActionResult<IEnumerable<Dog>> Get(string name, int age, string gender, string species)
+    {
+      var query = _db.Dogs.AsQueryable();
+
+      if (name != null)
+      {
+        query = query.Where(entry => entry.Name == name);
+      }
+
+      if (age != 0)
+      {
+        query = query.Where(entry => entry.Age == age);
+      }
+
+      if (gender != null)
+      {
+        query = query.Where(entry => entry.Gender == gender);
+      }
+
+      if (species != null)
+      {
+        query = query.Where(entry => entry.Species == species);
+      }
+
+      return query.ToList();
+    }
+
     [HttpPost]
     public void Post([FromBody] Dog dog)
     {
