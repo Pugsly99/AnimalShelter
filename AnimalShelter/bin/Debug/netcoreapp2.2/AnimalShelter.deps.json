@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "6f892e4ca0ae2f0a031efe28eb4d765555728b54"
+    "signature": "0dc41650daf2015ee0c34ef22144c6c10cb67cbb"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.2": {
       "AnimalShelter/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Versioning": "4.1.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.0",
@@ -36,6 +37,17 @@
         },
         "compile": {
           "AnimalShelter.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Versioning/4.1.0": {
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.WebApi.Versioning.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.7612.3743"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.WebApi.Versioning.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
@@ -3387,6 +3399,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNet.WebApi.Versioning/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S1Y1C+kNZnWJjVPSWtQnJytCr1bwYUHTkhrdBgVmOC4XALOrnR5Aw+SzpM2mhudi90gH1wZJ40pmzNA8/calGQ==",
+      "path": "microsoft.aspnet.webapi.versioning/4.1.0",
+      "hashPath": "microsoft.aspnet.webapi.versioning.4.1.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
       "type": "package",
