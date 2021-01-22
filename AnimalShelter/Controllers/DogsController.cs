@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using AnimalShelter.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AnimalShelter.Controllers
 {
@@ -55,6 +56,15 @@ namespace AnimalShelter.Controllers
     {
       _db.Dogs.Add(dog);
       _db.SaveChanges();
+    }
+
+    [HttpPut("{id}")]
+    
+    public void Put(int id, [FromBody] Dog dog)
+    {
+        dog.DogId = id;
+        _db.Entry(dog).State = EntityState.Modified;
+        _db.SaveChanges();
     }
   }
 }
